@@ -5,7 +5,7 @@
         <title>Formulario Cadastro</title>
     </head>
     <body>
-        <a href="listar">Ir para a tela Listar</a>
+        <a href="/PB_PHP/MVC_Exemplo/usuario/listar">Ir para a tela Listar</a>
         <form method="POST" action="salvar">
             <input type="text" name="nome" placeholder="Seu nome" require>
             <input type="text" name="email" placeholder="Seu email" require>

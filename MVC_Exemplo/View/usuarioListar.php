@@ -8,18 +8,21 @@
  </head>
  <body>
     <h2>Usuários</h2>
-    <a href="http://localhost/PB_PHP/MVC_Exemplo/usuario/telaCadastro">Ir para tela de Cadastrar</a>
+    <a href="/PB_PHP/MVC_Exemplo/usuario/telaCadastro">Ir para tela de Cadastrar</a>
     <table border="1">
         <tr>
             <th>Nome</th>
             <th>Email</th>
             <th>Ações</th>
         </tr>
-        <?php foreach($usuarios as $u): ?>
+        <?php foreach($usuarios as $id => $u): ?>
             <tr>
                 <td><?= $u['nome']?></td>
                 <td><?= $u['email']?></td>
-                <td>Proxima Aula</td>
+                <td>
+    <a href="/PB_PHP/MVC_Exemplo/usuario/telaEditar?id=<?= $id ?>">
+        Editar
+    </a>        </td>
             </tr>
         <?php endforeach; ?>
     </table>
